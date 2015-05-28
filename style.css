@@ -1,9 +1,5 @@
 body {
-    background: url(fotos/verloop.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+     background-color: #464646;
 }
 
 header {
