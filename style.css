@@ -1,10 +1,11 @@
 body {
-   background: url(fotos/verloop.png) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background: url(fotos/verloop.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
+
 header {
     border-bottom: 0.188em dotted #20eaec;
     box-shadow: 0 0.063em 0.063em rgba(0, 0, 0, 0.4);
@@ -77,7 +78,7 @@ img.homeimage:hover {
     -webkit-box-shadow: 0 0 10px #ccc; 
     box-shadow: 0 0 10px #ccc;
 } 
-article#about {
+#about {
     padding-top: 8.125em;
 }
 .tekst {
