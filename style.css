@@ -1,11 +1,5 @@
 body {
-    background: url(fotos/verloop.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    display:block;
-    padding: 20px;
+    background-color: #464646;
 }
 header {
     border-bottom: 0.188em dotted #20eaec;
