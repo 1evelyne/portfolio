@@ -1,7 +1,12 @@
 body {
-     background-color: #464646;
+    background: url(fotos/verloop.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display:block;
+    padding: 20px;
 }
-
 header {
     border-bottom: 0.188em dotted #20eaec;
     box-shadow: 0 0.063em 0.063em rgba(0, 0, 0, 0.4);
@@ -17,7 +22,7 @@ nav {
     color: white;
     height: 130px;
     margin: auto;
-    width: 900px;
+    width: 1000px;
     font-family:'Signika', sans-serif;
 }
 nav ul {
@@ -26,7 +31,7 @@ nav ul {
     font-size: 25px;
     margin-top: 40px;
     text-align: center;
-    width: 600px;
+    width: 700px;
     word-spacing: 40px;
 }
 nav li {
@@ -39,8 +44,8 @@ a:link {
     color: #666;
     text-decoration: none;
 }
-a:hover{
-    color: #20eaec;
+a:hover {
+    color: #6c71b1;
 }
 #logo {
     clear: both;
@@ -53,10 +58,10 @@ ol, ul {
     list-style: outside none none;
 }
 article.home {
-    padding-top: 8.125em;  
+    padding-top: 8.125em;
     clear: right;
 }
-article.home h1{
+article.home h1 {
     font-family:'Signika', sans-serif;
     font-size: 2.2em;
     color: red;
@@ -69,12 +74,12 @@ img.homeimage {
     padding: auto;
     display: block;
 }
-img.homeimage:hover { 
-    -moz-box-shadow: 0 0 10px #ccc; 
-    -webkit-box-shadow: 0 0 10px #ccc; 
+img.homeimage:hover {
+    -moz-box-shadow: 0 0 10px #ccc;
+    -webkit-box-shadow: 0 0 10px #ccc;
     box-shadow: 0 0 10px #ccc;
-} 
-#about {
+}
+article#about {
     padding-top: 8.125em;
 }
 .tekst {
@@ -84,35 +89,35 @@ img.homeimage:hover {
     clear: right;
 }
 img.imgovermij {
-    height:auto; 
-    width:auto; 
+    height:auto;
+    width:auto;
     margin-left: 3em;
     margin-top: -3em;
-    max-width: 25em; 
+    max-width: 25em;
     max-height: 25em;
     clear: right;
     box-shadow: 0 0 0.125em #111;
     float: right;
 }
-.text{ 
-    background:#FFF; 
-    opacity:0; 
+.text {
+    background:#FFF;
+    opacity:0;
     height: 340px;
-} 
-.imgovermij:hover .text { 
+}
+.imgovermij:hover .text {
     margin-top: -20em;
-    max-width: 13.6em; 
+    max-width: 13.6em;
     max-height: 25em;
     clear: right;
     float: right;
-    opacity:0.6; 
-    text-align:center; 
-    color:#000000; 
-    font-size:20px; 
-    font-weight:500; 
+    opacity:0.6;
+    text-align:center;
+    color:#000000;
+    font-size:20px;
+    font-weight:500;
     font-family:'Signika', sans-serif;
-    padding:30px; 
-} 
+    padding:30px;
+}
 article#fotos {
     padding-top: 10em;
 }
@@ -122,6 +127,9 @@ article#fotografie {
 article#contact {
     padding-top: 10em;
     padding-left: 2em;
+}
+article#links {
+    padding-top: 10em;
 }
 article {
     display: inline-block;
@@ -176,14 +184,93 @@ button {
     float: right;
     clear: right;
 }
-.box {
-    width: 12.500em;
-    height: 25.000em;
-    clear: right;
-    float: right;
-    margin-bottom: 2em;
-}
-.fotos img , .fotografie img{
-    position: absolute; width:800px; height:450px; left:50%;
+
+.fotos img, .fotografie img {
+    position: absolute;
+    width:800px;
+    height:450px;
+    left:50%;
     margin-left:-400px;
+}
+.social-icons {
+    max-width: 980px;
+    margin: 0 auto;
+}
+.icon {
+    float: left;
+    position: relative;
+    margin: 0 auto;
+    width: 19%;
+    height: 0;
+    margin: 15% 2%;
+    font-family: 'Signika';
+}
+@media all and (min-width: 640px) {
+    .icon {
+        width: 9%;
+        padding-bottom: 9%;
+    }
+}
+.icon:last-of-type {
+    margin-right: 0;
+}
+.icon a {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 10px;
+    background-color: #fff;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+.icon a:hover {
+    background-color: #6d8aa8;
+    background-size: 0%;
+    -webkit-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+}
+.icon__name {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-top: -7px;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    opacity: 0;
+    -webkit-filter: blur(25px);
+    filter: blur(25px);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.icon:hover .icon__name {
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    opacity: 1;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+}
+.icon--facebook a {
+    background-color: transparent;
+    background-image: url("fotos/facebook.png");
+}
+.icon--instagram a {
+    background-color: transparent;
+    background-image: url("fotos/instagram.png");
+}
+.icon--flickr a {
+    background-color: transparent;
+    background-image: url("fotos/flickr.png");
+}
+.icon--youtube a {
+    background-color: transparent;
+    background-image: url("fotos/youtube.png");
 }
