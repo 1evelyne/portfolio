@@ -1,5 +1,8 @@
 body {
-    background-color: #464646;
+   background: url(fotos/verloop.jpg) no-repeat center center fixed;
+   background-size: cover;
+   display:block;
+   padding: 20px;
 }
 header {
     border-bottom: 0.188em dotted #20eaec;
