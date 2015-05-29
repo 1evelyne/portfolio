@@ -1,8 +1,11 @@
 body {
-   background: url(fotos/verloop.jpg) no-repeat center center fixed;
-   background-size: cover;
-   display: inline-block;
-   padding: 20px;
+    background: url("fotos/background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display:block;
+    padding: 20px;
 }
 header {
     border-bottom: 0.188em dotted #20eaec;
@@ -76,7 +79,7 @@ img.homeimage:hover {
     -webkit-box-shadow: 0 0 10px #ccc;
     box-shadow: 0 0 10px #ccc;
 }
-article#about {
+#about {
     padding-top: 8.125em;
 }
 .tekst {
@@ -115,17 +118,17 @@ img.imgovermij {
     font-family:'Signika', sans-serif;
     padding:30px;
 }
-article#fotos {
+#fotos {
     padding-top: 10em;
 }
-article#fotografie {
+#fotografie {
     padding-top: 10em;
 }
-article#contact {
+#contact {
     padding-top: 10em;
     padding-left: 2em;
 }
-article#links {
+#links {
     padding-top: 10em;
 }
 article {
@@ -254,6 +257,10 @@ button {
     opacity: 1;
     -webkit-filter: blur(0);
     filter: blur(0);
+}
+.icon--linkedin a {
+    background-color: transparent;;
+    background-image: url("fotos/linkedin.png");
 }
 .icon--facebook a {
     background-color: transparent;
